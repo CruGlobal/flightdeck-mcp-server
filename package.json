@@ -1,5 +1,5 @@
 {
-  "name": "@cruglobal/flightdeck-mcp-server",
+  "name": "@twinge/flightdeck-mcp-server",
   "version": "0.1.0",
   "description": "Model Context Protocol server for Flightdeck — gives AI clients (Claude, Cursor, …) tools for projects, work items, cycles, modules and comments over the Flightdeck REST API.",
   "license": "MIT",
