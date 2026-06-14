@@ -1,0 +1,49 @@
+{
+  "name": "@cruglobal/flightdeck-mcp-server",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for Flightdeck — gives AI clients (Claude, Cursor, …) tools for projects, work items, cycles, modules and comments over the Flightdeck REST API.",
+  "license": "MIT",
+  "author": "Cru",
+  "type": "module",
+  "bin": {
+    "flightdeck-mcp-server": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruglobal/flightdeck-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cruglobal/flightdeck-mcp-server/issues"
+  },
+  "homepage": "https://github.com/cruglobal/flightdeck-mcp-server#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "flightdeck",
+    "project-management",
+    "claude"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
